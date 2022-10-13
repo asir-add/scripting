@@ -1,14 +1,25 @@
-#!/bin/bash
-if which cowsay > /dev/null
-then
-	echo "Cowsay instalado"
-else
-	echo "Cowsay no instalado"
-fi
+#!/bin/bash 
 
-if which ifconfig > /dev/null
-then
-	echo "Net-Tools instaladas"
-else
-	echo "Not-Tools no instaladas"
-fi
+source ./libreria.sh
+
+paquetes=( cowsay sl net-tools figlet mondongo )
+
+while true
+do
+	menu ${paquetes[*]}
+	if [ -z $opcion ]
+	then
+		echo "Debe especificar una opción"
+	elif [ $opcion = "s" -o $opcion = "S" ]
+	then
+		break
+	elif [ $opcion -ge 1 -a $opcion -le ${#paquetes[*]} ]
+	then
+		opcion=$((opcion - 1))
+		instalar-paquete ${paquetes[opcion]}
+	else
+		echo "Opcion incorrecta"
+	fi
+done
+
+echo "Fin del script"
