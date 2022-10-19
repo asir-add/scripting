@@ -27,3 +27,8 @@
 
     [Bajo peso|Normal|Sobrepeso|Obeso] ??? pendiente
 #>
+Param(
+    [float] $numero = 3.5
+)
+
+Write-Host "-$numero-"
