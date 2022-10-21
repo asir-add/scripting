@@ -1,0 +1,7 @@
+1. Sumar-Dos.ps1: sumar dos números pasados por parámetro.
+
+2. Multiplicar-Dos.ps1: Multiplicar dos números pasados por parámetro.
+
+3. Numero-MayorDe3.ps1: comparar los tres números pasados por parámetro y devolver el mayor.
+
+7. Menu-Tres.ps1: mostrar un menú que permita elegir entre los 3 primeros scripts (Sumar-Dos.ps1, Multiplicar-Dos.ps1 y Numero-MayorDe3.ps1), y que pida por teclado los datos que necesitan cada uno en sus argumentos para funcionar. Incluir una opción para salir del menú y terminar el script.

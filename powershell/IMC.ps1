@@ -28,7 +28,21 @@
     [Bajo peso|Normal|Sobrepeso|Obeso] ??? pendiente
 #>
 Param(
-    [float] $numero = 3.5
+    [float] $peso,
+    [int] $altura
 )
 
-Write-Host "-$numero-"
+if ($peso -eq 0) {
+    $peso=[float](Read-Host -p "¿Cuánto pesas (kg)?")
+}
+if ($altura -eq 0) {
+    $altura=[int](Read-Host -p "¿Cuánto mides (cm)?")
+}
+
+if ($altura -eq 0) {
+    Write-Host -ForegroundColor Red "Qué haces loco???!"
+    exit
+}
+
+$area=$peso * $altura
+Write-Host $area
