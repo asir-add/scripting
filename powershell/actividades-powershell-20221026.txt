@@ -1,0 +1,19 @@
+1. Sumar-Dos.ps1: sumar dos números pasados por parámetro.
+
+2. Multiplicar-Dos.ps1: Multiplicar dos números pasados por parámetro.
+
+3. Numero-MayorDe3.ps1: comparar los tres números pasados por parámetro y devolver el mayor.
+
+4. Menu-Tres.ps1: mostrar un menú que permita elegir entre los 3 primeros scripts (Sumar-Dos.ps1, Multiplicar-Dos.ps1 y Numero-MayorDe3.ps1), y que pida por teclado los datos que necesitan cada uno en sus argumentos para funcionar. Incluir una opción para salir del menú y terminar el script.
+
+5. Listar-Hasta100.ps1: Listar los número del 1 al 100.
+
+6. Listar-Rango.ps1: Listar todos los números del rango comprendido entre los dos números pasados por parámetro.
+
+7. Sumar-Todos.ps1: Sumar todos los números pasados por parámetro y mostrar el resultado. Puede aceptar de 1 a N parámetros, pero no 0 parámetros (da error).
+
+8. Sumar-Rango.ps1: Sumar todos los números del rango comprendido entre los dos números pasados por parámetro, y mostrar el resultado.
+
+9. Listar-Usuarios.ps1: Listar los nombres de todos los usuarios del sistema.
+
+10. Listar-Grupos.ps1: Listar los nombres de todos los grupos del sistema.
