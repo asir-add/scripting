@@ -1,21 +1,15 @@
 #!/bin/bash
 
-echo "A. Mostrar la fecha"
-echo "B. Mostrar informaciÃ³n de tu usuario"
-echo "C. Listar los procesos"
-read -p "Elije una opciÃ³n: " opcion
+PS3="Opción: "
 
-case "$opcion" in
-A|a)
-	date
-	;;
-B|b)
-	id
-	;;
-C|c)
-	ps
-	;;
-*)
-	echo "OpciÃ³n incorrecta" >&2
-	exit 1
-esac
+select i in Listado Quien Salir
+do
+
+	case $i in
+		Listado) ls -l;;
+		Quien) who;;
+		Salir) exit 0;;
+		*) echo Opción incorrecta
+	esac
+
+done
