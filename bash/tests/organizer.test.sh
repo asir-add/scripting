@@ -6,6 +6,10 @@ echo -e "* TESTEANDO SCRIPT $script"
 
 [ ! -f "$script" ] && echo "Script no encontrado" && exit 1
 
+echo -e "\n================================================================================"
+echo -e "TEST 1: Organizar directorio"
+echo -e "================================================================================\n"
+
 echo -e "Creando estructura de prueba"
 rm -fr directorio
 mkdir directorio
@@ -16,8 +20,6 @@ touch -d "10/25/2022" directorio/fichero2.pdf
 touch -d "11/13/2022" directorio/otor.png
 touch -d "11/18/2022" directorio/otromas.py
 
-echo -e "\n================================================================================"
-echo -e "TEST 1: Organizar directorio"
-echo -e "================================================================================\n"
 bash -c "set -x && $script directorio"
+
 tree directorio
