@@ -1,0 +1,5 @@
+D:\Users\fvarrui\Desktop\ADD\scripting\powershell
+User-Data.ps1,19/10/2022 12:01
+Vectores.ps1,04/11/2022 12:25
+Yo-Soy.ps1,07/11/2022 9:06:36
+alexander.txt,07/11/2022 9:06:36
