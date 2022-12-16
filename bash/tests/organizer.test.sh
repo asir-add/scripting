@@ -10,8 +10,6 @@ echo -e "\n=====================================================================
 echo -e "TEST 1: Organizar directorio"
 echo -e "================================================================================\n"
 
-echo -e "Creando estructura de prueba"
-rm -fr directorio
 mkdir directorio
 touch -d "09/20/2021" directorio/document.xml 
 touch -d "09/18/2021" directorio/foto.jpeg
@@ -23,3 +21,4 @@ touch -d "11/18/2022" directorio/otromas.py
 bash -c "set -x && $script directorio"
 
 tree directorio
+rm -fr directorio
