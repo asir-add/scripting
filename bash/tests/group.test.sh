@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 script=$1
 
+echo -e "\n********************************************************************************"
 echo -e "* TESTEANDO SCRIPT $script"
 
 [ ! -f "$script" ] && echo "Script no encontrado" && exit 1
