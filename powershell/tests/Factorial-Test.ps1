@@ -2,7 +2,7 @@
     [Parameter(Mandatory=$true)][string] $Script
 )
 
-Write-Host "' n********************************************************************************"
+Write-Host "`n********************************************************************************"
 Write-Host "* TESTEANDO SCRIPT $script"
 
 if (!-not (Test-Path -Path $Script -PathType Leaf)) {
