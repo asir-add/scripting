@@ -5,7 +5,7 @@
 Write-Host "`n********************************************************************************"
 Write-Host "* TESTEANDO SCRIPT $script"
 
-if (!-not (Test-Path -Path $Script -PathType Leaf)) {
+if (-not (Test-Path -Path $Script -PathType Leaf)) {
     Write-Host "Script no encontrado"
     exit 1
 }
