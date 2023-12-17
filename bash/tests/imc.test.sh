@@ -10,7 +10,7 @@ echo -e "\n=====================================================================
 echo -e "TEST 2: Calculando IMC de 1.76m y 80kg = 25.82 (sobrepeso) desde teclado"
 echo -e "================================================================================\n"
 entrada="80\n176"
-bash -c "set -x && echo -e $entrada | $script"
+bash -c "set -x && echo -e "$entrada" | $script"
 
 echo -e "\n================================================================================"
 echo -e "TEST 3: Calculando IMC de 1.69m y 60kg = 21.03 (normal)"
@@ -21,4 +21,4 @@ echo -e "\n=====================================================================
 echo -e "TEST 4: Calculando IMC de 1.69m y 60kg = 21.03 (normal) desde teclado"
 echo -e "================================================================================\n"
 entrada="60\n169"
-bash -c "set -x && echo -e $entrada | $script"
+bash -c "set -x && echo -e "$entrada" | $script"
